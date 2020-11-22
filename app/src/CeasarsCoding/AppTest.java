@@ -11,8 +11,4 @@ public class AppTest {
         App classUnderTest = new App();
         assertNotNull("app should have a greeting", classUnderTest.getGreeting());
     }
-
-    @Test void shouldShowSimpleAssertion(){
-        Assertions.assertEquals(expected 1, actual 1);
-    }
 }
