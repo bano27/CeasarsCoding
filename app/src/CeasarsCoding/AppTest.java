@@ -60,4 +60,18 @@ public class AppTest {
         assertEquals(expectedResultMessage, actualResultMessage);
 
     }
+
+    //tests decryption of a message with a shift of 6
+
+    @Test public void testDecryptWithShift6() {
+        App classUnderTest = new App();
+
+        int shift = 6;
+        String message = "Nkrru Cuxrj";
+        String expectedResultMessage = "Hello World";
+        String actualResultMessage = CeasarCipher.decrypt(shift, message);
+
+        assertEquals(expectedResultMessage, actualResultMessage);
+
+    }
 }
