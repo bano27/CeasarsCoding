@@ -13,7 +13,7 @@ public class AppTest {
         int shift = 1;
         String message = "Hello World";
         String expectedResultMessage = "Ifmm Xpsme";
-        String actualResultMessage = CeasarCipher.encrypt(shift, message);
+        String actualResultMessage = classUnderTest.encrypt(1, 1);
 
         assertEquals(expectedResultMessage, actualResultMessage);
         
@@ -27,7 +27,7 @@ public class AppTest {
         int shift = 6;
         String message = "Hello World";
         String expectedResultMessage = "Nkrru Cuxrj";
-        String actualResultMessage = CeasarCipher.encrypt(shift, message);
+        String actualResultMessage = classUnderTest.encrypt(1, 6);
 
         assertEquals(expectedResultMessage, actualResultMessage);
 
@@ -41,7 +41,7 @@ public class AppTest {
         int shift = 10;
         String message = "Hello World";
         String expectedResultMessage = "Rovvy Gybvn";
-        String actualResultMessage = CeasarCipher.encrypt(shift, message);
+        String actualResultMessage = classUnderTest.encrypt(1, 10);
 
         assertEquals(expectedResultMessage, actualResultMessage);
 
@@ -55,7 +55,7 @@ public class AppTest {
         int shift = 1;
         String message = "Ifmm Xpsme";
         String expectedResultMessage = "Hello World";
-        String actualResultMessage = CeasarCipher.decrypt(shift, message);
+        String actualResultMessage = classUnderTest.decrypt(1, 1);
 
         assertEquals(expectedResultMessage, actualResultMessage);
 
@@ -69,7 +69,7 @@ public class AppTest {
         int shift = 6;
         String message = "Nkrru Cuxrj";
         String expectedResultMessage = "Hello World";
-        String actualResultMessage = CeasarCipher.decrypt(shift, message);
+        String actualResultMessage = classUnderTest.decrypt(shift, message);
 
         assertEquals(expectedResultMessage, actualResultMessage);
 
@@ -83,7 +83,7 @@ public class AppTest {
         int shift = 10;
         String message = "Rovvy Gybvn";
         String expectedResultMessage = "Hello World";
-        String actualResultMessage = CeasarCipher.decrypt(shift, message);
+        String actualResultMessage = classUnderTest.decrypt(shift, message);
 
         assertEquals(expectedResultMessage, actualResultMessage);
 
