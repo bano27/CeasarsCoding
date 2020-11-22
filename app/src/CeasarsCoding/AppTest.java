@@ -7,8 +7,15 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class AppTest {
-    @Test public void testAppHasAGreeting() {
+    @Test public void testEncryptWithShift1() {
         App classUnderTest = new App();
-        assertNotNull("app should have a greeting", classUnderTest.getGreeting());
+
+        int shift = 1;
+        String message = "Hello World";
+        String expectedResultMessage = "";
+        String actualResultMessage = CeasarCipher.encrypt(shift, message);
+
+        assertEquals(expectedResultMessage, actualResultMessage);
+        
     }
 }
