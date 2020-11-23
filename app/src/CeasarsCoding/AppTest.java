@@ -10,12 +10,12 @@ public class AppTest {
     @Test public void testEncryptWithShift1() {
         App classUnderTest = new App();
 
-        int shift = 1;
+        //int shift = 1;
         String message = "Hello World";
-        String expectedResultMessage = "Ifmm Xpsme";
-        String actualResultMessage = classUnderTest.encrypt(message, 1);
+        String expectedEncryptMessage = "Ifmm Xpsme";
+        String actualEncryptMessage = classUnderTest.encrypt(message, 1);
 
-        assertEquals(expectedResultMessage, actualResultMessage);
+        assertEquals(expectedEncryptMessage, actualEncryptMessage);
         
     }
 
@@ -24,12 +24,12 @@ public class AppTest {
     @Test public void testEncryptWithShift6() {
         App classUnderTest = new App();
 
-        int shift = 6;
+        //int shift = 6;
         String message = "Hello World";
-        String expectedResultMessage = "Nkrru Cuxrj";
-        String actualResultMessage = classUnderTest.encrypt(message, 6);
+        String expectedEncryptMessage = "Nkrru Cuxrj";
+        String actualEncryptMessage = classUnderTest.encrypt(message, 6);
 
-        assertEquals(expectedResultMessage, actualResultMessage);
+        assertEquals(expectedEncryptMessage, actualEncryptMessage);
 
     }
 
@@ -38,12 +38,12 @@ public class AppTest {
     @Test public void testEncryptWithShift10() {
         App classUnderTest = new App();
 
-        int shift = 10;
+        //int shift = 10;
         String message = "Hello World";
-        String expectedResultMessage = "Rovvy Gybvn";
-        String actualResultMessage = classUnderTest.encrypt(message, 10);
+        String expectedEncryptMessage = "Rovvy Gybvn";
+        String actualEncryptMessage = classUnderTest.encrypt(message, 10);
 
-        assertEquals(expectedResultMessage, actualResultMessage);
+        assertEquals(expectedEncryptMessage, actualEncryptMessage);
 
     }
 
@@ -52,12 +52,12 @@ public class AppTest {
     @Test public void testDecryptWithShift1() {
         App classUnderTest = new App();
 
-        int shift = 1;
+        //int shift = 1;
         String message = "Ifmm Xpsme";
-        String expectedResultMessage = "Hello World";
-        String actualResultMessage = classUnderTest.decrypt(message, 1);
+        String expectedDecryptMessage = "Hello World";
+        String actualDecryptMessage = classUnderTest.decrypt(message, 1);
 
-        assertEquals(expectedResultMessage, actualResultMessage);
+        assertEquals(expectedDecryptMessage, actualDecryptMessage);
 
     }
 
@@ -66,12 +66,12 @@ public class AppTest {
     @Test public void testDecryptWithShift6() {
         App classUnderTest = new App();
 
-        int shift = 6;
+        //int shift = 6;
         String message = "Nkrru Cuxrj";
-        String expectedResultMessage = "Hello World";
-        String actualResultMessage = classUnderTest.decrypt(message, 6);
+        String expectedDecryptMessage = "Hello World";
+        String actualDecryptMessage = classUnderTest.decrypt(message, 6);
 
-        assertEquals(expectedResultMessage, actualResultMessage);
+        assertEquals(expectedDecryptMessage, actualDecryptMessage);
 
     }
 
@@ -80,12 +80,12 @@ public class AppTest {
     @Test public void testDecryptWithShift10() {
         App classUnderTest = new App();
 
-        int shift = 10;
+        //int shift = 10;
         String message = "Rovvy Gybvn";
-        String expectedResultMessage = "Hello World";
-        String actualResultMessage = classUnderTest.decrypt(message, 10);
+        String expectedDecryptMessage = "Hello World";
+        String actualDecryptMessage = classUnderTest.decrypt(message, 10);
 
-        assertEquals(expectedResultMessage, actualResultMessage);
+        assertEquals(expectedDecryptMessage, actualDecryptMessage);
 
     }
 }

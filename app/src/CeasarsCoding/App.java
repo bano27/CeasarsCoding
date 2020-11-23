@@ -15,7 +15,7 @@ public class App {
     public static String decrypt(String message, int shift){
         String trial = "";
         for (int i = 0; i < message.length(); i++){
-            trial += (char)(message.charAt(i) - shift);
+            trial += (char) (message.charAt(i) - shift);
         }
         return trial;
     }
